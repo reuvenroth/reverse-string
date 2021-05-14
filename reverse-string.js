@@ -1,7 +1,8 @@
 reverseString = () => {
-  userInput = prompt('Say it in reverse!', 'Reverse your thoughts');
+  const endProgram = () => alert("See you next time!");
+  let userInput = prompt('Say it in reverse!', 'Reverse your thoughts');
   if (userInput === null) {
-    alert("See you next time!");
+    endProgram();
   }
   else{
     result = alert("Your message reversed is: "
@@ -11,7 +12,7 @@ reverseString = () => {
       reverseString();
     }
     else {
-      alert("See you next time!");
+      endProgram();
     }
   }
 };
